@@ -3,11 +3,13 @@ import { BrowserRouter, Navigate, Route, Routes, useRouteError } from "react-rou
 import Post from '../../presentation/pages/post/Post';
 import Home from '../../presentation/pages/home/Home';
 
+const REPO_BASENAME = '/blog';
+
 const AppLayoutFactoryLazy = lazy(() => import('../factories/layouts/app-layout/app-layout.factory'));
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={REPO_BASENAME}>
       <Suspense>
         <Routes>
           <Route element={<AppLayoutFactoryLazy />}>
