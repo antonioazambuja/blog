@@ -43,7 +43,7 @@
     const pathname = location.pathname;
     const search = location.search;
     const hash = location.hash;
-
+    console.log('Redirecting on index.html...')
     location.replace(
       protocol + '//' + hostname + (port ? ':' + port : '') +
       pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
