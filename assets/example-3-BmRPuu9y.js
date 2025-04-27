@@ -1,4 +1,4 @@
-import{R as e}from"./index-C2Px96If.js";const l={title:"Awesome Title",author:"Antonio Azambuja",date:"2024-12-30",tags:["great","awesome","rad"]},a=`<h1>This is awesome</h1>
+import{R as e}from"./index-DWj48Zvm.js";const l={title:"Awesome Title",author:"Antonio Azambuja",date:"2024-12-30",tags:["great","awesome","rad"]},a=`<h1>This is awesome</h1>
 <h1>Título 1</h1>
 <h2>Título 2</h2>
 <h3>Título 3</h3>
