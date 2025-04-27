@@ -1,4 +1,4 @@
-import{R as e}from"./index-cne7XgD8.js";const a={title:"Awesome Title",author:"Antonio Azambuja",date:"2024-12-30",summary:"Vite is an opinionated web dev build tool that serves your code via native ES Module imports. Vite is an opinionated web dev build tool that serves your code via native ES Module imports",tags:["great","awesome","rad"]},l=`<h2>Título 2</h2>
+import{R as e}from"./index-DtLtY6pX.js";const a={title:"Awesome Title",author:"Antonio Azambuja",date:"2024-12-30",summary:"Vite is an opinionated web dev build tool that serves your code via native ES Module imports. Vite is an opinionated web dev build tool that serves your code via native ES Module imports",tags:["great","awesome","rad"]},l=`<h2>Título 2</h2>
 <h3>Título 3</h3>
 <p>Texto simples
 Vite is an opinionated web dev build tool that serves your code via native ES Module imports during dev and bundles it with Rollup for production.</p>
