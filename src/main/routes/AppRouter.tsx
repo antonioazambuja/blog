@@ -14,6 +14,7 @@ const AppLayoutFactoryLazy = lazy(
 );
 
 export const AppRouter = () => {
+  console.log("AppRouter");
   return (
     <BrowserRouter>
       <Suspense>
@@ -35,7 +36,11 @@ export const AppRouter = () => {
               element={<Post />}
               ErrorBoundary={ErrorBoundary}
             />
-            {/* <Route path='*' element={<Navigate to='/blog' />} ErrorBoundary={ErrorBoundary} /> */}
+            <Route
+              path="*"
+              element={<Navigate to="/blog" />}
+              ErrorBoundary={ErrorBoundary}
+            />
           </Route>
         </Routes>
       </Suspense>

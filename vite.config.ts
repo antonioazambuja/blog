@@ -1,33 +1,36 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import path from 'path';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import path from "path";
 import { plugin as mdPlugin, Mode } from "vite-plugin-markdown";
 
-import tsconfig from './tsconfig.json';
+import tsconfig from "./tsconfig.json";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/blog/",
   plugins: [
     react(),
     mdPlugin({
       mode: [Mode.HTML, Mode.MARKDOWN, Mode.REACT],
-    })
+    }),
   ],
   define: {
-    global: 'window',
+    global: "window",
   },
   build: {
     modulePreload: false,
     target: "esnext",
-    assetsDir: 'assets',
-    minify: 'esbuild',
+    assetsDir: "assets",
+    minify: "esbuild",
     cssCodeSplit: true,
     sourcemap: false,
   },
   resolve: {
-    alias: Object.entries(tsconfig.compilerOptions.paths).map(([key, [value]]) => ({
-      find: key,
-      replacement: path.resolve(__dirname, value),
-    }))
-  }
-})
+    alias: Object.entries(tsconfig.compilerOptions.paths).map(
+      ([key, [value]]) => ({
+        find: key,
+        replacement: path.resolve(__dirname, value),
+      })
+    ),
+  },
+});
