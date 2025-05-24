@@ -21,12 +21,6 @@ export const AppRouter = () => {
         <Routes>
           <Route element={<AppLayoutFactoryLazy />}>
             <Route
-              index
-              path="/"
-              element={<Navigate to="/" />}
-              ErrorBoundary={ErrorBoundary}
-            />
-            <Route
               path="/"
               element={<Home />}
               ErrorBoundary={ErrorBoundary}
