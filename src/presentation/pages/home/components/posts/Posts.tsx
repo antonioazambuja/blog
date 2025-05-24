@@ -12,7 +12,7 @@ export const Posts = () => {
   const navigate = useNavigate()
 
   const handlePostClick = (slug: string) => {
-    navigate(`/blog/${slug}`)
+    navigate(`/${slug}`)
   }
 
   return (

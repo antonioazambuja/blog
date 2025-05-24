@@ -20,7 +20,7 @@ const Post = () => {
 
     setContent(null);
 
-    navigate("/blog");
+    navigate("/");
   };
 
   useEffect(() => {

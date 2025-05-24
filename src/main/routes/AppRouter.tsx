@@ -23,22 +23,22 @@ export const AppRouter = () => {
             <Route
               index
               path="/"
-              element={<Navigate to="/blog" />}
+              element={<Navigate to="/" />}
               ErrorBoundary={ErrorBoundary}
             />
             <Route
-              path="/blog"
+              path="/"
               element={<Home />}
               ErrorBoundary={ErrorBoundary}
             ></Route>
             <Route
-              path="/blog/:slug"
+              path="/:slug"
               element={<Post />}
               ErrorBoundary={ErrorBoundary}
             />
             <Route
               path="*"
-              element={<Navigate to="/blog" />}
+              element={<Navigate to="/" />}
               ErrorBoundary={ErrorBoundary}
             />
           </Route>
