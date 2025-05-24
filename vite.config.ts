@@ -7,7 +7,7 @@ import tsconfig from "./tsconfig.json";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/blog/",
+  base: "/",
   plugins: [
     react(),
     mdPlugin({
