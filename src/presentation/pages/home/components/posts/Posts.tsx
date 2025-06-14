@@ -1,6 +1,8 @@
 import { Tags } from "@/components"
 import * as C from "./Posts.style"
 
+import PostImage from "@/assets/posts/transitioning-from-devops-to-swe.png";
+
 import { PostsContext } from "@/contexts"
 import { formatDate } from "@/utils"
 import { useContext } from "react"
@@ -17,9 +19,9 @@ export const Posts = () => {
   return (
     <>
       {
-        posts.map(({ date, slug, tags, title, summary, image}) => (
+        posts.map(({ date, slug, tags, title, summary }) => (
           <C.PostContainer key={slug} onClick={() => handlePostClick(slug)}>
-            <img src={image} alt={`Image post ${title}`} />
+            <img src={PostImage} alt={`Image post ${title}`} />
             <C.PostContainerContent>
               <h3>{title}</h3>
               {summary && <p>{summary}</p>}
