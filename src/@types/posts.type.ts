@@ -4,6 +4,7 @@ export type Attributes = {
   date: string;
   summary?: string;
   tags: string[];
+  image?: string;
 }
 
 export type PostType = Attributes & {
