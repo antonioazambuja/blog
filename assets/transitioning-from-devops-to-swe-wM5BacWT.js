@@ -1,4 +1,4 @@
-import{R as e}from"./index-CEJIlhNg.js";const n={title:"Transicionando de DevOps para Software Enginner",author:"Antonio Azambuja",date:"2025-06-14",summary:"Relato de transição de DevOps/SRE para Software Engineer",image:"src/assets/transitioning-from-devops-to-swe.png",authorImage:"src/assets/author/antonio.azambuja.jpeg",tags:["devops","sre","carreira","swe"]},i=`<h2>Onde eu estava?</h2>
+import{R as e}from"./index-BG66k6al.js";const n={title:"Transicionando de DevOps para Software Enginner",author:"Antonio Azambuja",date:"2025-06-14",summary:"Relato de transição de DevOps/SRE para Software Engineer",image:"./src/assets/transitioning-from-devops-to-swe.png",authorImage:"./src/assets/author/antonio.azambuja.jpeg",tags:["devops","sre","carreira","swe"]},i=`<h2>Onde eu estava?</h2>
 <pre><code class="language-bash">$ whoami
 Antonio Azambuja
 </code></pre>
