@@ -41,6 +41,8 @@ const Post = () => {
     fetchPost(slug);
   }, [slug, getPost]);
 
+  if (!Object.keys(attributes).length) return null;
+
   return (
     <C.PostContainer>
       {content === null ? (
@@ -52,7 +54,7 @@ const Post = () => {
             <C.PostHeaderContent>
               <img
                 src={
-                  "https://camo.githubusercontent.com/444008db71c058981970dc8f0898e624f5f663c6e601fa1f6b85ab09a0d3936b/68747470733a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f426c61636b746f6361745f73696e676c655f312e6a7067"
+                  attributes.authorImage
                 }
                 alt={"Author"}
               />

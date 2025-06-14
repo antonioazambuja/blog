@@ -24,7 +24,7 @@ export const Posts = () => {
               <h3>{title}</h3>
               {summary && <p>{summary}</p>}
               <C.PostFooter>
-                <C.PostFooterDate>{formatDate(date)}</C.PostFooterDate>
+                <C.PostFooterDate>{date ? formatDate(date) : null}</C.PostFooterDate>
                 <Tags tags={tags} />
               </C.PostFooter>
             </C.PostContainerContent>

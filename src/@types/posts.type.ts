@@ -5,6 +5,7 @@ export type Attributes = {
   summary?: string;
   tags: string[];
   image?: string;
+  authorImage: string;
 }
 
 export type PostType = Attributes & {
