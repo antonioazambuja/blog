@@ -1,6 +1,5 @@
 import { Tags } from "@/components"
 import * as C from "./Posts.style"
-import PostImage from "@/assets/post-image.png"
 
 import { PostsContext } from "@/contexts"
 import { formatDate } from "@/utils"
@@ -18,14 +17,14 @@ export const Posts = () => {
   return (
     <>
       {
-        posts.map(({ date, slug, tags, title, summary}) => (
+        posts.map(({ date, slug, tags, title, summary, image}) => (
           <C.PostContainer key={slug} onClick={() => handlePostClick(slug)}>
-            <img src={PostImage} alt={`Image post ${title}`} />
+            <img src={image} alt={`Image post ${title}`} />
             <C.PostContainerContent>
               <h3>{title}</h3>
               {summary && <p>{summary}</p>}
               <C.PostFooter>
-                <C.PostFooterDate>{formatDate(date)}</C.PostFooterDate>
+                <C.PostFooterDate>{date ? formatDate(date) : null}</C.PostFooterDate>
                 <Tags tags={tags} />
               </C.PostFooter>
             </C.PostContainerContent>

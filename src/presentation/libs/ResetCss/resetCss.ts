@@ -37,7 +37,6 @@ export const ResetStyle = createGlobalStyle`
     overflow-x: hidden;
   }
   ol, ul {
-    list-style: none;
   }
   blockquote, q {
     quotes: none;
