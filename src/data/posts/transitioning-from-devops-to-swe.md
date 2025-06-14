@@ -2,7 +2,7 @@
 title: Transicionando de DevOps para Software Enginner
 author: Antonio Azambuja
 date: "2025-06-13"
-summary: "Isso não é um guia mas sim um relato da minha experiencia dos primeiros meses após uma transição de carreira"
+summary: "Relato de transição de DevOps/SRE para Software Engineer"
 image: src/assets/transitioning-from-devops-to-swe.png
 tags:
   - "devops"
