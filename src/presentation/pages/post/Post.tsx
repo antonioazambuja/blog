@@ -1,6 +1,7 @@
 import * as C from "./Post.styles";
 
 import { useContext, useEffect, useState } from "react";
+import AuthorImage from "@/assets/author/antonio.azambuja.jpeg";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import { PostsContext } from "@/contexts";
@@ -53,9 +54,7 @@ const Post = () => {
             <C.PostTitle>{attributes.title}</C.PostTitle>
             <C.PostHeaderContent>
               <img
-                src={
-                  attributes.authorImage
-                }
+                src={AuthorImage}
                 alt={"Author"}
               />
               <C.PostHeaderPostInfo>
